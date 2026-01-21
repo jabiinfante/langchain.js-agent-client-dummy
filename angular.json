@@ -16,6 +16,14 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "allowedCommonJsDependencies": [
+              "decamelize",
+              "camelcase",
+              "ansi-styles",
+              "p-queue",
+              "base64-js",
+              "semver"
+            ],
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [

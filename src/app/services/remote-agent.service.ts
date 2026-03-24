@@ -1,8 +1,7 @@
 import { inject, Injectable, signal, Signal } from '@angular/core';
 import { load } from '@langchain/core/load';
 import { BaseMessage } from '@langchain/core/messages';
-import { Subscription, tap } from 'rxjs';
-import { retry } from 'rxjs/internal/operators/retry';
+import { retry, Subscription, tap } from 'rxjs';
 import { EventSourceService } from './event-source.service';
 
 @Injectable({
